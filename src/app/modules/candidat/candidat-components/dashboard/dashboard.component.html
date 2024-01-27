@@ -1,0 +1,23 @@
+<div style="background-color: #F8F8F8; min-height: 91vh">
+  <div style="padding-top: 10px;"></div>
+  <div style="margin-top: 10px;" class="child" *ngFor="let company of companies">
+    <div nz-row>
+
+      <div nz-col nzSpan="8">
+        <img class="profile" style="height: 130px; width: 200px; border-radius: 10px;" [src]="company.processedImg"
+             alt="profile"/>
+      </div>
+
+      <div nz-col nzSpan="8">
+        <h2 style="cursor: pointer; color: #108ee9;">
+          {{company.name}}
+        </h2>
+        <p>{{company.description}}</p>
+      </div>
+      <div style="float: right;">
+        <button style="margin-left: 10px;" nzSize="small" nz-button nzType="primary"
+                routerLink="/candidat/postuler/{{company.id}}">Postuler</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div style="background-color: #F8F8F8; min-height: 91vh;" *ngIf="company">
+  <div style="padding-top: 10px;"></div>
+  <div style="margin-top: 10px;" class="child" >
+    <div nz-row>
+
+      <div nz-col nzSpan="8">
+        <img class="profile" style="height: 130px; width: 200px; border-radius: 10px;" [src]="processedImg"
+             alt="profile"/>
+      </div>
+
+      <div nz-col nzSpan="8">
+        <h2 style="cursor: pointer; color: #108ee9;">
+          {{company.name}}
+        </h2>
+        <p>{{company.description}}</p>
+      </div>
+    </div>
+  </div>
+  <nz-spin [nzSpinning]="isSpinning" [nzSize]="'large'" nzTip="Working..." style="margin-top: 50px">
+    <div class="dashboard-filter">
+      <form [formGroup]="validatForm">
+        <div nz-col [nzMd]="24" [nzSm]="24" [nzXs]="24">
+          <div class="profile-badge">
+            <label for="upload_profile_image" class="upload-label" *ngIf="selectedFile">
+              <img class="profile" [src]="imagePreview" alt="profile"/>
+            </label>
+            <input type="file" nz-button nzType="primary" id="upload_profile_image"
+                   accept="image/x-png,image/gif,image/jpeg" (change)="onFileSelected($event)">
+            <button nz-button nzShape="circle"></button>
+          </div>
+        </div>
+
+        <div class="filter-select-dropdown filter-fields-width">
+          <button class="filterBtn" style="margin-left: 735px" nz-button nzType="primary"
+                  (click)="postuler()">Postuler</button>
+        </div>
+      </form>
+    </div>
+  </nz-spin>
+</div>
