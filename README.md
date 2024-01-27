@@ -1,4 +1,13 @@
 # GestionrhAngular
+![image](https://github.com/yassine6996/GestionDesRh/assets/75941098/386d5468-7f66-4db1-9070-2ac26a8121e5)
+![image](https://github.com/yassine6996/GestionDesRh/assets/75941098/aaf962b5-4a3f-4676-a7a2-71e90ce000eb)
+![image](https://github.com/yassine6996/GestionDesRh/assets/75941098/49be93b9-76e8-421d-b8d6-c5e3e3ed7db3)
+
+![image](https://github.com/yassine6996/GestionDesRh/assets/75941098/639cac55-11c1-46eb-bfb5-4dc7dc13de43)
+
+![image](https://github.com/yassine6996/GestionDesRh/assets/75941098/5f9b58ed-9536-434d-a1d4-da254c522350)
+
+![image](https://github.com/yassine6996/GestionDesRh/assets/75941098/e40ad0f7-180d-4ab9-be25-1094f60f6934)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
 
